@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //bài1
+  // let a=[[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]
+  // for(let i in a){
+  //     document.write("row"+i +"<br>") ;
+  //     for(let j in a[i]){
+  //         document.write(""+a[i][j]+"<br>");
+  //     }
+  // }
+
+  //bai2
+//   let a=[3,4,'d','u',5,8,9];
+// document.write(a.reverse().join(""));
+
+  //Bài 5
+//   let a= Array.from( window.prompt("nhập chuỗi 1").toString());
+//   let b= Array.from(window.prompt("nhập chuỗi 2").toString());
+//   let bang;
+//   if(a.length!==b.length){
+//       bang=false;
+//   }
+//   else{
+//       for(let i=0;i<a.length;i++){
+//           if(a[i]!==b[i]){
+//               bang=false;
+//               break;
+//           }
+//           bang=true;
+//       }
+//   }
+// if(bang){
+//     document.write("2 chuỗi giống nhau");
+// } else{
+//     document.write("2 chuỗi khác nhau")
+// }
+
+  //bai6
+//
+// let a= Array.from(window.prompt("nhập mảng vào đây").toString());
+// for(let i=0;i<a.length;i++){
+//     if(a[i]=='-'){
+//         a[i]='_';
+//     }
+// } document.write(a)
+
+  //bài4
+// let a= window.prompt("nhập chuỗi vào đây").toString();
+// b= a.split(' ');
+// let dem=0;
+// for(let i=0; i<b.length;i++){
+//     dem+=1;
+// }
+// document.write(dem);
+
+
+  //bai 3
+  let array;
+
+      let n = +prompt("Nhap vao so phan tu cua mang");
+      array = new Array(n)
+      for(let i=0;i<array.length;i++) {
+          array[i] = prompt("nhap vao phan tu thu "+(i+1))
+      }
+  
+  let count=0;
+  for(let i=0;i<array.length;i++) {
+      if(!isNaN(array[i])) {
+          count++
+      }
+  }
+document.write(count)
+
+</script>
+</body>
+</html>

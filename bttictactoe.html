@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align:center; margin:auto; width:960px;background-color: blue;
+            height:auto; overflow:hidden;
+        }
+        button{
+            width:60px;height:60px;
+        }
+    </style>
+</head>
+<body>
+<h1>Tic tac toe</h1>
+<button onclick="ham(0)"></button>
+<button onclick="ham(1)"></button>
+<button onclick="ham(2)"></button>
+<br>
+<button onclick="ham(3)"></button>
+<button onclick="ham(4)"></button>
+<button onclick="ham(5)"></button>
+<br>
+<button onclick="ham(6)"></button>
+<button onclick="ham(7)"></button>
+<button onclick="ham(8)"></button>
+<script>
+let co=true;
+let dem=0;
+function ham(btn){
+    let node=document.getElementsByTagName("button")[btn];
+    node.innerHTML=co?"X":"O";
+    node.style.backgroundColor=co?"aqua":"red";
+    node.setAttribute("disable","true");
+    co=!co;
+    dem+=1;
+    if(dem===8){
+        alert("GameOver");
+        location.reload;
+    }
+}
+
+// for(let i=0; i<5; i++){
+//     for (let j=0; j<5; j++){
+//         if (board[i][j] === 'x' && board[i][j+1] === 'x' && board[i][j+2] === 'x' ||
+//             board[i][j] === 'x' && board[i+1][j] === 'x' && board[i+2][j] === 'x'){
+//             alert("x Thắng");
+//         }else if(board[i][j] === 'o' && board[i][j+1] === 'o' && board[i][j+2] === 'o' ||
+//             board[i][j] === 'o' && board[i+1][j] === 'o' && board[i+2][j] === 'o'){
+//             alert("o Thắng");
+//         }
+//     }
+
+</script>
+</body>
+</html>

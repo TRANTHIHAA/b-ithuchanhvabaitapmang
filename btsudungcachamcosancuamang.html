@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//bai1 nối tất cả các mảng trong 1 mảng chuỗi lại với nhau
+  // let myColor=["Red","Green","While","Black"];
+  // document.write(myColor.toString()+"<br>");
+  // document.write(myColor.join()+"<br>");
+  // document.write(myColor.join('+'));
+// bai2 viết 1 ct nhập vào 1 số và chèn dấu - vào giữa 2 số chẵn
+//   let num=window.prompt();
+//   let str=num.toString();
+//   let result=[str[0]];
+//   for(x=1;x<num.length;x++){
+//       if(str[x-1]%2===0 && str[x]%2===0){
+//           result.push('-',str[x]);
+//       } else result.push(str[x]);
+//
+//   } document.write(result.join(''));
+//bai3 viết ct nhập vào 1 chuỗi và chuyển các kí tự từ chữ thường sang chữ hoa
+    let str= ['b','D','s'];
+    let UPPER= 'ABCDEFGHIKLMNOPQRSTUVWXYZ';
+    let LOWER='abcdefghiklmnopqrstuvwxyz';
+    let result=[];
+    for(let x=0; x<str.length;x++){
+        if(UPPER.indexOf(str[x]) !==-1){
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !==-1){
+            result.push(str[x].toUpperCase());
+        }
+        else{
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>
